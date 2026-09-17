@@ -1,13 +1,72 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BSF website</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Associazione Be.St. friends</title>
+  <meta name="description" content="Be.St. friends prosegue l'opera e l'impegno sociale di Stefano Bertoldi, sostenendo inclusione, comunità e innovazione sociale.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2300635b'/%3E%3Cpath d='M18 19h17c8 0 13 4 13 10 0 4-2 7-6 9 5 1 8 5 8 10 0 8-6 12-15 12H18V19zm10 8v8h7c3 0 5-1 5-4s-2-4-5-4h-7zm0 16v9h8c4 0 6-1 6-4 0-4-2-5-6-5h-8z' fill='%23fff'/%3E%3C/svg%3E">
+  <style>
+    :root{--ink:#153532;--deep:#00635b;--deep-2:#004c46;--mint:#dff4eb;--lime:#d8ed70;--cream:#fffaf1;--white:#fff;--line:rgba(21,53,50,.16);--shadow:0 22px 60px rgba(0,70,63,.16)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth;overflow-x:hidden} body{margin:0;min-width:320px;overflow-x:hidden;color:var(--ink);background:var(--cream);font-family:"DM Sans",sans-serif;font-size:17px;line-height:1.65} a{color:inherit} img{display:block;max-width:100%}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}section{scroll-margin-top:24px}
+    .topbar{position:relative;z-index:5;padding:26px 0;color:#fff;background:var(--deep-2)}.topbar .wrap{display:flex;justify-content:space-between;align-items:center}.brand{font-family:Manrope,sans-serif;font-weight:800;letter-spacing:-.04em;font-size:1.25rem;text-decoration:none}.brand span{color:var(--lime)}.nav{display:flex;gap:26px;font-size:.93rem;font-weight:600}.nav a{text-decoration:none;border-bottom:1px solid transparent}.nav a:hover,.nav a:focus-visible{border-color:currentColor}
+    .hero{position:relative;color:#fff;background:var(--deep);overflow:hidden}.hero:after{content:"";position:absolute;right:-120px;bottom:-200px;width:520px;height:520px;border:100px solid rgba(216,237,112,.13);border-radius:50%}.hero-content{position:relative;z-index:1;max-width:860px;padding:82px 0 96px}.eyebrow{display:flex;align-items:center;gap:12px;text-transform:uppercase;letter-spacing:.16em;font-size:.78rem;font-weight:700;margin:0 0 22px}.eyebrow:before{content:"";width:38px;height:3px;background:var(--lime)}h1,h2,h3{font-family:Manrope,sans-serif;line-height:1.08;letter-spacing:-.045em;margin:0}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.hero-title-image{display:block;width:100%;max-width:785px;height:auto}.hero-copy{max-width:785px;font-size:clamp(1.08rem,1.7vw,1.3rem);line-height:1.65;margin:34px 0 0;color:rgba(255,255,255,.9)}.hero-copy strong{color:var(--lime)}
+    .event{position:relative;z-index:2;margin-top:-46px}.event-card{display:grid;grid-template-columns:.72fr 1.28fr auto;align-items:center;gap:34px;background:var(--lime);padding:38px 42px;border-radius:24px;box-shadow:var(--shadow)}.date{display:flex;align-items:center;gap:18px;border-right:1px solid rgba(21,53,50,.25);padding-right:30px}.date-day{font:800 4.7rem/1 Manrope;color:var(--deep)}.date-meta{font:700 1rem/1.35 Manrope;text-transform:uppercase;letter-spacing:.05em}.event h2{font-size:clamp(1.75rem,3vw,2.5rem);margin-bottom:8px}.event p{margin:0;line-height:1.45}.event-note{font-size:.94rem;margin-top:8px!important}.button{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 25px;border-radius:999px;background:var(--deep);color:#fff;text-decoration:none;font-weight:700;white-space:nowrap;transition:.2s ease}.button:hover{background:var(--deep-2);transform:translateY(-2px)}.button:focus-visible{outline:3px solid #fff;outline-offset:3px}
+    .project{padding:126px 0 120px}.project-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:80px;align-items:center}.photo-wrap{position:relative}.photo{aspect-ratio:4/5;object-fit:cover;width:100%;border-radius:28px;box-shadow:var(--shadow);background:var(--mint)}.photo-tag{position:absolute;right:-30px;bottom:34px;width:190px;padding:20px;background:var(--deep);color:#fff;border-radius:18px;font:700 1rem/1.35 Manrope}.section-label{color:var(--deep);font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;margin-bottom:20px}.project h2{font-size:clamp(2.5rem,5vw,4.4rem);max-width:630px}.project h2 em{color:var(--deep);font-style:normal}.project-copy{font-size:1.12rem;margin:32px 0 0;max-width:660px}.facts{display:grid;grid-template-columns:repeat(3,1fr);margin-top:38px;border-top:1px solid var(--line);padding-top:28px;gap:18px}.fact strong{display:block;font:800 2.1rem/1 Manrope;color:var(--deep);margin-bottom:7px}.fact span{font-size:.85rem;line-height:1.35;display:block}
+    footer{background:var(--ink);color:#fff;padding:48px 0}.footer-grid{display:flex;justify-content:space-between;align-items:end;gap:30px}.footer-brand{font:800 1.45rem Manrope}.footer-brand span{color:var(--lime)}footer p{margin:7px 0 0;color:rgba(255,255,255,.7);font-size:.92rem}.footer-links{display:flex;gap:22px;font-size:.9rem}.footer-links a{color:#fff;text-underline-offset:4px}
+    @media(max-width:900px){.event-card{grid-template-columns:1fr auto}.date{grid-row:1/3}.project-grid{grid-template-columns:1fr;gap:55px}.project-grid>*{min-width:0}.photo-wrap{max-width:620px}.photo{aspect-ratio:4/3}.photo-tag{right:22px}.facts{max-width:620px}}
+    @media(max-width:680px){body{font-size:16px}.wrap{width:min(calc(100% - 28px),1160px)}.topbar{padding:15px 0}.topbar .wrap{display:block}.brand{display:inline-flex;align-items:center;min-height:44px}.nav{display:flex;gap:4px 16px;margin-top:6px;flex-wrap:wrap;font-size:.84rem}.nav a{display:inline-flex;align-items:center;min-height:44px}.hero-content{padding:48px 0 72px}.hero-title-image{width:100%;margin-top:4px}.hero-copy{font-size:1rem;line-height:1.6;margin-top:26px}.eyebrow{font-size:.72rem;line-height:1.4;margin-bottom:18px}.event{margin-top:-24px}.event-card{display:block;padding:24px 20px;border-radius:18px}.date{border:0;border-bottom:1px solid rgba(21,53,50,.25);padding:0 0 18px;margin-bottom:20px}.date-day{font-size:3.5rem}.date-meta{font-size:.88rem}.event h2{font-size:1.8rem}.event p{overflow-wrap:anywhere}.event .button{width:100%;min-height:56px;margin-top:22px;white-space:normal;text-align:center}.project{padding:74px 0}.project-grid{gap:36px}.photo{aspect-ratio:auto;height:auto}.photo-tag{position:static;width:100%;margin-top:12px;border-radius:14px}.project h2{font-size:clamp(2.25rem,12vw,3.25rem)}.project-copy{font-size:1rem;line-height:1.65;margin-top:24px}.facts{grid-template-columns:1fr;gap:16px;margin-top:28px;padding-top:22px}.fact{display:grid;grid-template-columns:64px minmax(0,1fr);align-items:center}.fact strong{margin:0;font-size:1.8rem}.footer-grid{display:block}.footer-links{margin-top:24px;gap:8px 18px;flex-wrap:wrap}.footer-links a{display:inline-flex;align-items:center;min-height:44px}}
+    @media(max-width:380px){.wrap{width:calc(100% - 22px)}.nav{gap:2px 12px}.event-card{padding:22px 17px}.date-day{font-size:3.15rem}.hero-content{padding-top:40px}.project h2{font-size:2.15rem}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
+  </style>
 </head>
 <body>
-  <h1>Hello from Be.St. friends</h1>
-  <p>This is our website.</p>
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="#inizio" aria-label="Be.St. friends — torna all'inizio">Be.St.<span>friends</span></a>
+      <nav class="nav" aria-label="Navigazione principale"><a href="#associazione">L’associazione</a><a href="#evento">Cena benefica</a><a href="#progetto">Il progetto</a></nav>
+    </div>
+  </header>
+  <main id="inizio">
+    <section class="hero" id="associazione" aria-labelledby="hero-title">
+      <div class="wrap hero-content">
+        <p class="eyebrow">Associazione Be.St. friends</p>
+        <h1 id="hero-title" class="sr-only">Accendere luci, insieme.</h1>
+        <img class="hero-title-image" src="assets/best-friends-title.png" alt="Accendere luci, insieme.">
+        <p class="hero-copy">L’Associazione <strong>Be.St. friends</strong> nasce per proseguire l’opera e l'impegno sociale di <strong>Stefano Bertoldi</strong>. I soci fondatori, animati dalla volontà di non disperdere il patrimonio di valori, idee e progetti da lui avviati, intendono dare continuità alla sua visione. L'Associazione si ispira al talento di Stefano nel generare progetti capaci di coinvolgere persone con storie, culture e appartenenze diverse e alla sua costante tensione verso l'innovazione sociale, con l'obiettivo di “accendere luci” sulle questioni sociali che rischiano di rimanere in ombra. L’esempio di Stefano rimane la guida per generare benessere e inclusione nelle comunità.</p>
+      </div>
+    </section>
+
+    <section class="event" id="evento" aria-labelledby="event-title">
+      <div class="wrap">
+        <div class="event-card">
+          <div class="date"><span class="date-day">02</span><span class="date-meta">Ottobre<br>2026<br>dalle 19:00</span></div>
+          <div><h2 id="event-title">Cena benefica</h2><p>RSA Casa Famiglia SPES · via di Coltura 138, Cadine, Trento</p><p class="event-note">Le donazioni raccolte sosterranno la realizzazione del nuovo Hospice Pediatrico di Trento, un luogo di cura e accoglienza per bambini, giovani e famiglie.</p></div>
+          <a class="button" href="https://forms.gle/GWfnsv7wG7mJ9Ztq5" target="_blank" rel="noopener noreferrer">Iscriviti alla cena&nbsp; ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="project" id="progetto" aria-labelledby="project-title">
+      <div class="wrap project-grid">
+        <div class="photo-wrap">
+          <a href="https://drive.google.com/file/d/151vf_QzcNZHM3ZFmc0l52sW0lT48B6-K/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Apri il rendering del nuovo Hospice Pediatrico">
+            <img class="photo" src="https://lh3.googleusercontent.com/d/151vf_QzcNZHM3ZFmc0l52sW0lT48B6-K=w1600" alt="Rendering del nuovo Hospice Pediatrico di Trento">
+          </a>
+          <div class="photo-tag">Un luogo vicino, accogliente, dedicato alla cura.</div>
+        </div>
+        <div>
+          <p class="section-label">Il progetto che sosteniamo</p>
+          <h2 id="project-title">Un nuovo <em>Hospice Pediatrico</em> a Trento</h2>
+          <p class="project-copy">Il nuovo Hospice pediatrico di Trento sarà un centro dedicato alle cure palliative pediatriche, situato in via al Desert, accanto al Centro di Protonterapia e vicino al futuro Polo ospedaliero universitario. La struttura disporrà di sei posti, spazi per day hospital, ambulatori, terapie e supporto alle famiglie. Inserito nella rete provinciale delle cure palliative, l’hospice fungerà da collegamento tra ospedale, territorio e domicilio, offrendo assistenza specialistica, accoglienza e continuità di cura ai bambini, ai giovani adulti e alle loro famiglie.</p>
+          <div class="facts" aria-label="Caratteristiche principali"><div class="fact"><strong>6</strong><span>posti dedicati all’accoglienza</span></div><div class="fact"><strong>1</strong><span>rete tra ospedale, territorio e domicilio</span></div><div class="fact"><strong>∞</strong><span>cura e vicinanza alle famiglie</span></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap footer-grid"><div><div class="footer-brand">Be.St.<span>friends</span></div><p>Nel segno di Stefano, per il benessere e l’inclusione delle comunità.</p></div><div class="footer-links"><a href="#associazione">Chi siamo</a><a href="#evento">Cena benefica</a><a href="#progetto">Hospice Pediatrico</a></div></div></footer>
 </body>
 </html>
